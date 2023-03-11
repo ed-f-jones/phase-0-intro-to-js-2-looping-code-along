@@ -11,10 +11,10 @@ return message;
 
 //const numbers = 10
 function countDown(num) {
-    const numbers = 0;
-    while (numbers > 0) {
+    let numbers = 0;
+    while (numbers > 0 || === 0) {
+        console.log(numbers);
         numbers--;
-        console.log(numbers)
     }
 }
 countDown(10);
