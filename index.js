@@ -9,12 +9,15 @@ for (let i = 0; i < names.length; i++) {
 return message;
 }
 
-//const numbers = 10
 function countDown(num) {
-    let numbers = 0;
-    while (numbers > 0 || === 0) {
+    let numbers = num;
+    while (numbers >= 0) {
         console.log(numbers);
         numbers--;
     }
 }
-countDown(10);
+
+// My programmer friend is a jerk.
+const obfCountdown = n => {
+    while (n > (console.log(n--) || 0));
+};
